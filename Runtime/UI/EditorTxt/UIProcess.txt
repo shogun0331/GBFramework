@@ -1,0 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using GB;
+using GB.UI;
+
+public class Process$POPUPNAME$
+{
+
+
+   
+
+}

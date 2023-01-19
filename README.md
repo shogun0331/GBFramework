@@ -1,2 +1,6 @@
-# GBFramework
-GB Unity Framework
+# GB Framwork
+
+- Model
+- UI System
+- Audio
+- InputManager

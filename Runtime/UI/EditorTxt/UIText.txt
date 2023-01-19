@@ -1,0 +1,66 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using GB;
+using GB.UI;
+using UnityEngine.UI;
+
+public class $POPUPNAME$ : UIScreen
+{
+
+    Process$POPUPNAME$ data;
+
+
+    private void Awake()
+    {
+        data = new Process$POPUPNAME$();
+        RegistButton();
+    }
+
+    private void OnEnable()
+    {
+        Presenter.Bind("$POPUPNAME$",this);
+    }
+
+    private void OnDisable() 
+    {
+        Presenter.UnBind("$POPUPNAME$", this);
+
+    }
+
+    public void RegistButton()
+    {
+        foreach(var v in _dicButtons)
+            v.Value.onClick.AddListener(() => { OnButtonClick(v.Key);});
+        
+    }
+
+    public void OnButtonClick(string key)
+    {
+        switch(key)
+        {
+
+        }
+    }
+
+ public override void OnChangeValue(string key, string value)
+    {
+
+        switch (key)
+        {
+       
+        }
+    }
+
+ public override void OnChangeValue<T>(string key, MessageStuct<T> data)
+    {
+        switch (key)
+        {
+            //ex : MessageStuct<Hit_Message>? hit = data as MessageStuct<Hit_Message>?;
+       
+        }
+
+
+    }
+
+}
